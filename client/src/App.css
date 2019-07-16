@@ -1,0 +1,57 @@
+.top-nav{
+  /* z-index: 9999; */
+  margin-bottom: 20px; 
+}
+
+.card-item{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+
+.card-item .img-box{
+  width: 60px;
+  margin-right: 20px;
+}
+
+.card-item .img-box img{
+  width: 100%;
+}
+
+
+
+.list-size{
+  display: flex;
+}
+.list-size .size-item{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+.list-size .active{
+  background: black;
+  color: #fff;
+}
+
+.loading{
+  height: 60vh;
+}
+
+.loading img{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100px;
+}

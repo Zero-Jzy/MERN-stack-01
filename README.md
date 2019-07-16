@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MERN Shopping List
 
-## Available Scripts
+> Shopping list app built with the MERN stack along with Redux for state management, Reactstrap and react-transition-group.
 
-In the project directory, you can run:
+## Quick Start
 
-### `npm start`
+Add your MONGO_URI to the default.json file. Make sure you set an env var for that and the jwtSecret on deployment
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+# Install dependencies for server
+npm install
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+# Install dependencies for client
+npm run client-install
 
-### `npm test`
+# Run the client & server with concurrently
+npm run dev
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Run the Express server only
+npm run server
 
-### `npm run build`
+# Run the React client only
+npm run client
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Server runs on http://localhost:5000 and client on http://localhost:3000
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+There is a Heroku post build script so that you do not have to compile your React frontend manually, it is done on the server. Simply push to Heroku and it will build and load the client index.html page
 
-### `npm run eject`
+## App Info
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Author
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Brad Traversy
+[Traversy Media](http://www.traversymedia.com)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Version
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1.0.0
 
-## Learn More
+### License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is licensed under the MIT License

@@ -17,10 +17,8 @@ export function CardProvider(props) {
           var idMyProduct = myProduct.id;
           var newCard = new Map(card);
           var newCount = 1;
-
           if (newCard.has(idMyProduct)) {
             var curruntCount = newCard.get(idMyProduct).count;
-
             if (add) {
               newCount = curruntCount + 1
             } else if (!add && curruntCount > 1) {
@@ -31,6 +29,7 @@ export function CardProvider(props) {
               return;
             }
           }
+          
           newCard.set(idMyProduct, { ...myProduct, count: newCount })
           updateCardState(newCard);
           localStorage.setItem('myCard', JSON.stringify([...newCard]));
